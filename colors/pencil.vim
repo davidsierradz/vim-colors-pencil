@@ -386,3 +386,7 @@ else
   hi link GitGutterChange             LineNr
   hi link GitGutterChangeDelete       LineNr
 endif
+
+" CoC.nvim
+call s:h("CocWarningHighlight",    {"fg": s:actual_white, "bg": s:red , "gui": "bold"     , "cterm": "bold"     })
+call s:h("CocErrorHighlight",    {"fg": s:actual_white, "bg": s:red , "gui": "bold"     , "cterm": "bold"     })
