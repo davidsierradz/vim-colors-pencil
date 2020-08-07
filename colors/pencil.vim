@@ -230,7 +230,7 @@ call s:h("Question",      {"fg": s:red})
 call s:h("StatusLine",    {"bg": s:bg_very_subtle})
 call s:h("Conceal",       {"fg": s:norm})
 call s:h("StatusLineNC",  {"bg": s:bg_very_subtle, "fg": s:medium_gray})
-call s:h("VertSplit",     {"bg": s:bg_very_subtle, "fg": s:bg_very_subtle})
+" call s:h("VertSplit",     {"bg": s:bg_very_subtle, "fg": s:bg_very_subtle})
 call s:h("Title",         {"fg": s:dark_blue})
 call s:h("Visual",        {"bg": s:visual})
 call s:h("VisualNOS",     {"bg": s:bg_subtle})
@@ -390,3 +390,5 @@ endif
 " CoC.nvim
 call s:h("CocWarningHighlight",    {"fg": s:actual_white, "bg": s:red , "gui": "bold"     , "cterm": "bold"     })
 call s:h("CocErrorHighlight",    {"fg": s:actual_white, "bg": s:red , "gui": "bold"     , "cterm": "bold"     })
+
+highlight VertSplit ctermfg=248 ctermbg=228 guifg=#bdae93 guibg=#f2e5bc gui=NONE
