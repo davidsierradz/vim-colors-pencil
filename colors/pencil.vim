@@ -114,6 +114,7 @@ if &background == "dark"
   let s:green           = s:light_green
   let s:red             = s:light_red
   let s:visual          = s:lighter_black
+  let s:fold            = { "gui": "#3C3836", "cterm": "237" }
 else
   let s:bg              = s:white
   let s:bg_subtle       = s:light_gray
@@ -125,6 +126,7 @@ else
   let s:green           = s:dark_green
   let s:red             = s:dark_red
   let s:visual          = s:light_blue
+  let s:fold            = { "gui": "#EBDBB2", "cterm": "223" }
 endif
 
 if g:pencil_neutral_headings == 1
@@ -236,7 +238,7 @@ call s:h("Visual",        {"bg": s:visual})
 call s:h("VisualNOS",     {"bg": s:bg_subtle})
 call s:h("WarningMsg",    {"fg": s:red})
 call s:h("WildMenu",      {"fg": s:bg, "bg": s:norm})
-call s:h("Folded",        {"fg": s:medium_gray})
+call s:h("Folded",        {"fg": s:medium_gray, "bg": s:fold, "gui": "italic"})
 call s:h("FoldColumn",    {"fg": s:bg_subtle})
 call s:h("DiffAdd",       {"bg": s:bg_subtle, "fg": s:green})
 call s:h("DiffDelete",    {"bg": s:bg_subtle, "fg": s:red})
